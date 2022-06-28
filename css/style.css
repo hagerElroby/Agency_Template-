@@ -206,6 +206,19 @@ a{
       opacity: 1;
       visibility: visible;
 }
+@media(max-width:727px){
+      .header .nav > li > a{
+            padding: 20px 10px;
+            font-size: 10px;
+      }   
+}
+@media (max-width:375){
+      .header .logo{
+            width: 20%;
+            float: left;
+      }
+      
+}
  /* 3.1 home section  */
  .home{
        height: 100vh;
@@ -445,6 +458,14 @@ padding: var(--main-padding);
 .offer-item:hover .offer-item-title{
       color: #fff;
 }
+@media(max-width:450px){
+      .offer-item{
+            width: 40%;
+            padding: 15px 10px 15px 35px;
+          
+      }
+}
+
 /* service section  */
 .service{
       padding: var(--main-padding);
@@ -535,7 +556,8 @@ padding: var(--main-padding);
 }
 .number-item .icon{
       color: var(--main-color);
-      margin-bottom: 15px;
+      margin-bottom: 5px;
+      margin-top: 5px;
 }
 .number-item-title{
       font-weight: bold;
@@ -545,7 +567,11 @@ padding: var(--main-padding);
 .number-item-text{
       color: #fff;
 }
-
+@media (max-width:500px){
+      .number-item{
+            width: 50%;
+      } 
+}
 /* pricing section  */
 .pricing{
       padding: var(--main-padding)
@@ -636,12 +662,12 @@ padding: var(--main-padding);
       margin: auto;
 }
 .testimonail-item{
-      width: 50%;
+      width: 45%;
       float: left;
       color: #fff;
 }
 .testimonail-item .testimonail-toplayer{
- padding: 10px 2px 40px 100px;
+ padding: 10px 2px 40px  100px;
  position: relative;     
 }
 .testimonail-item .testimonail-toplayer img{
@@ -663,6 +689,7 @@ padding: var(--main-padding);
 .testimonail-des{
       line-height: 1.5;
       font-size: 18px;
+      margin-right: 4%;
 }
 
 /* team section  */
