@@ -75,7 +75,7 @@ opacity: 0.8;
       box-sizing: border-box;
 }
 :root{
-    --main-padding:120px 0;
+    --main-padding:7.5em 0;
     --main-color:#6195ff;
     --margin-bottom:10px
 }
@@ -205,19 +205,6 @@ a{
 .dropdown:hover .dropdown-menu{
       opacity: 1;
       visibility: visible;
-}
-@media(max-width:727px){
-      .header .nav > li > a{
-            padding: 20px 10px;
-            font-size: 10px;
-      }   
-}
-@media (max-width:375){
-      .header .logo{
-            width: 20%;
-            float: left;
-      }
-      
 }
  /* 3.1 home section  */
  .home{
@@ -421,18 +408,21 @@ padding: var(--main-padding);
       padding: var(--main-padding);
 }
 .offer-content{
-      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
 }
 .offer-item{
       width: 30%;
-      float: left;
       margin-bottom: 20px;
       border: 1px solid #e8e8e8;
       padding: 30px 15px 30px 70px;
       position: relative;
 }
 .offer-item.mg{
-      margin: 0 5%;
+      margin-left:  5%;
+      margin-right: 5%;
 }
 .offer-item .icon{
       position: absolute;
@@ -458,14 +448,6 @@ padding: var(--main-padding);
 .offer-item:hover .offer-item-title{
       color: #fff;
 }
-@media(max-width:450px){
-      .offer-item{
-            width: 40%;
-            padding: 15px 10px 15px 35px;
-          
-      }
-}
-
 /* service section  */
 .service{
       padding: var(--main-padding);
@@ -567,11 +549,7 @@ padding: var(--main-padding);
 .number-item-text{
       color: #fff;
 }
-@media (max-width:500px){
-      .number-item{
-            width: 50%;
-      } 
-}
+
 /* pricing section  */
 .pricing{
       padding: var(--main-padding)
@@ -962,3 +940,67 @@ input{
       font-size: 15px;
       text-transform: uppercase;
 }
+
+/****************Media Query***********************/
+/*large screen*/
+@media (max-width:1023px){
+      .header .nav > li > a{
+            padding: 20px 10px;
+            font-size: 10px;
+      }
+      .header .logo{
+            width: 30%;
+      }
+      .container{
+            width: 90%;
+      }
+  
+      .offer-item{
+            width: 40%;
+            margin: 20px;
+            padding: 30px 15px 30px 70px;
+      }
+       .offer-item.mg{
+            margin: 20px;
+      } 
+
+}
+/*medium screen*/
+@media (max-width:860px){
+      .home .title{ 
+            font-size: 2rem;
+      }   
+}
+
+/*small screen*/
+@media (max-width:540px){
+     
+      .header .nav > li > a{
+            padding: 20px 5px;
+            font-size: 8px;
+      } 
+      .header .logo{
+            display: none;
+      } 
+      .header .nav{
+            width: 80%;
+           
+      }
+      .home .title{ 
+            font-size: 1.3rem;
+            text-transform: capitalize;
+      }
+      .home .home-des{
+            margin: 20px 0;
+            letter-spacing: 1px;
+            line-height: 1.5; 
+      } 
+      .home .btn {
+            min-width: 170px;
+            display: block;
+            margin:auto;
+            margin-bottom: 20px;
+      }          
+        
+}
+
